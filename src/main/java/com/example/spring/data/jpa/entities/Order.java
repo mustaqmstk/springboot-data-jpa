@@ -88,4 +88,16 @@ public class Order {
     public void setDateCreated(LocalDateTime dateCreated) {
         this.dateCreated = dateCreated;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", totalQuantity=" + totalQuantity +
+                ", totalPrice=" + totalPrice +
+                ", status=" + status +
+                ", email='" + email + '\'' +
+                ", dateCreated=" + dateCreated +
+                '}';
+    }
 }
